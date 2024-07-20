@@ -3,7 +3,7 @@
     <NuxtLink to="/">
       <NuxtImg src="/logo.svg" alt="" width="100px" />
     </NuxtLink>
-    <UiButton />
+    <Button />
   </aside>
 </template>
 

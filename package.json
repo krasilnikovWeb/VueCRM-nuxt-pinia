@@ -11,9 +11,18 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.7.0",
-    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@radix-icons/vue": "^1.0.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "nuxt": "^3.12.3",
+    "radix-vue": "^1.9.2",
     "shadcn-nuxt": "^0.10.4",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "typescript": "^5.5.3"
   }
 }
