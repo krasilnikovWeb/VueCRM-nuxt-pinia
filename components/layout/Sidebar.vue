@@ -1,9 +1,14 @@
 <template>
   <aside class="px-5 py-8 bg-sidebar h-full relative w-full">
     <NuxtLink to="/" class="mb-10 block">
-      <NuxtImg src="/logo.svg" alt="" width="100px" class="mx-auto" />
+      <NuxtImg src="/logo.svg" alt="" width="140px" class="mx-auto" />
     </NuxtLink>
-    <Button> Send</Button>
+    <button
+      class="absolute top-2 right-3 transition-colors hover:text-purple-400"
+    >
+      <icon name="line-md:logout" size="20"></icon>
+    </button>
+    <LayoutMenu />
   </aside>
 </template>
 
