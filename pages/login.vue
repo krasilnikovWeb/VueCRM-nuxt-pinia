@@ -17,8 +17,8 @@
         />
         <Input placeholder="Name" type="name" class="mb-3" v-model="nameRef" />
         <div class="flex items-center justify-center gap-5">
-          <Button type="button">Login</Button>
-          <Button type="button">Register</Button>
+          <Button type="button" @click="login">Login</Button>
+          <Button type="button" @click="register">Register</Button>
         </div>
       </form>
     </div>
@@ -26,10 +26,12 @@
 </template>
 
 <script setup lang="ts">
-/* import { useAuthStore, useIsLoadingStore } from "~/store/auth.store";
+import { useAuthStore, useIsLoadingStore } from "~/store/auth.store";
+import { v4 as uuid } from "uuid";
+import { account } from "@/utils/appwrite";
 
 useSeoMeta({
-  title: "Login | CRM Syste m",
+  title: "Login | CRM System",
 });
 const emailRef = ref("");
 const passwordRef = ref("");
@@ -41,7 +43,7 @@ const router = useRouter();
 
 const login = async () => {
   isLoadingStore.set(true);
-  await account.createSession(emailRef.value, passwordRef.value);
+  await account.createEmailPasswordSession(emailRef.value, passwordRef.value);
   const response = await account.get();
   if (response) {
     authStore.set({
@@ -57,7 +59,17 @@ const login = async () => {
 
   await router.push("/");
   isLoadingStore.set(false);
-}; */
+};
+
+const register = async () => {
+  await account.create(
+    uuid(),
+    emailRef.value,
+    passwordRef.value,
+    nameRef.value
+  );
+  await login();
+};
 </script>
 
 <style></style>
