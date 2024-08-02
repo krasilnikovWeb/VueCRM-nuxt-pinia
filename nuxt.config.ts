@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "shadcn-nuxt",
     "@nuxtjs/color-mode",
+    "@pinia/nuxt",
     [
       "@nuxtjs/google-fonts",
       {
@@ -18,17 +19,13 @@ export default defineNuxtConfig({
         },
       },
     ],
-    "@nuxt/icon"
+    "@nuxt/icon",
   ],
   shadcn: {
-    /**
-     * Prefix for all the imported component
-     */
     prefix: "",
-    /**
-     * Directory that the component lives in.
-     * @default "./components/ui"
-     */
     componentDir: "./components/ui",
+  },
+  pinia: {
+    storesDirs: ["./store/**"],
   },
 });

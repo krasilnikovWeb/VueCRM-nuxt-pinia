@@ -13,12 +13,14 @@
     "@nuxt/icon": "^1.4.3",
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/google-fonts": "^3.2.0",
+    "@pinia/nuxt": "^0.5.2",
     "@radix-icons/vue": "^1.0.0",
     "@vueuse/core": "^10.11.0",
     "appwrite": "^15.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "nuxt": "^3.12.3",
+    "pinia": "^2.2.0",
     "radix-vue": "^1.9.2",
     "shadcn-nuxt": "^0.10.4",
     "tailwind-merge": "^2.4.0",
@@ -29,5 +31,8 @@
     "@nuxtjs/color-mode": "^3.4.2",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "typescript": "^5.5.3"
+  },
+  "overrides": {
+    "vue": "latest"
   }
 }
