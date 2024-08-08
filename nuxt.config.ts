@@ -9,6 +9,12 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@pinia/nuxt",
     [
+      "@vee-validate/nuxt",
+      {
+        autoImports: true,
+      },
+    ],
+    [
       "@nuxtjs/google-fonts",
       {
         families: {
