@@ -35,8 +35,5 @@
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.4.2",
     "typescript": "^5.5.3"
-  },
-  "overrides": {
-    "vue": "latest"
   }
 }
