@@ -25,7 +25,7 @@
             draggable="true"
             @dragstart="() => handleDragStart(card, column)"
           >
-            <CardHeader role="button">
+            <CardHeader role="button" @click="store.set(card)">
               <CardTitle>{{ card.name }}</CardTitle>
 
               <CardDescription class="mt-2 block">{{
@@ -41,6 +41,7 @@
           </Card>
         </div>
       </div>
+      <KanbanSlideover />
     </div>
   </div>
 </template>
@@ -93,7 +94,7 @@ function handleDrop(targetColumn: IColumn) {
 }
 
 const { data, isLoading, refetch } = useKanbanQuery();
-/* const store = useDealSlideStore() */
+const store = useDealSlideStore();
 </script>
 
 <style></style>
