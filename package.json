@@ -33,6 +33,12 @@
     "vue": "latest"
   },
   "devDependencies": {
+    "@iconify-json/ep": "^1.1.16",
+    "@iconify-json/fluent": "^1.1.61",
+    "@iconify-json/line-md": "^1.1.39",
+    "@iconify-json/mingcute": "^1.1.19",
+    "@iconify-json/ph": "^1.1.14",
+    "@iconify-json/radix-icons": "^1.1.15",
     "@nuxtjs/color-mode": "^3.4.2",
     "typescript": "^5.5.3"
   }
