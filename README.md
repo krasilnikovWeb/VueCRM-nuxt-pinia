@@ -1,3 +1,32 @@
+# Vue CRM 👾
+
+## Как запустить?
+
+1. Склонировать репозиторий к себе на ПК
+2. `npm install`
+3. `npm run dev`
+4. Готово!
+
+**⚙️ Стэк технологий:**
+
+- NUXT.js
+- Nuxt Icon
+- Tailwind
+- Vue
+- Nuxt UI
+- Pinia
+- Vue Query
+- Vue Validate
+- App Write
+- CLSX
+- DayJS
+- JS Cookie
+- shadcn
+- UUID
+
+
+
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
